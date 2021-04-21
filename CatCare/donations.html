@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- DEVELOPER: Marcelo Mendoza, IS117-002, Spring 2021 -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>My First Bootstrap 4 Page</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">CatCare</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="adult_cats.html">Adult Cats</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop1"
+                           data-toggle="dropdown">
+                            Outside Cats
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="stray_cats.html">Stray Cats</a>
+                            <a class="dropdown-item" href="tnr.html">TNR Program</a>
+                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop2"
+                           data-toggle="dropdown">
+                            Baby Cats
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="kitten_care.html">Kitten Care</a>
+                            <a class="dropdown-item" href="fostering.html">Fostering</a>
+                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop3"
+                           data-toggle="dropdown">
+                            Contacts
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="contact.html">Contact</a>
+                            <a class="dropdown-item" href="donations.html">Donations</a>
+                            <a class="dropdown-item" href="aboutus.html">About Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <header>
+        <img src="images/donations.jpg" alt="a cat with big eyes looking at you"></img>
+    </header>
+
+    <body>
+    <article class="donating">
+        <h2></h2>
+        <p>
+            Any amount would be appreciated! We will donate to a different cat program every month. We want help as many cats as we can. May it be helping with fostering,
+            or it can be to help TNR programs. We want every cat to be indoor cats so that they can be happy and warm. Thank you for considering for donating! <br><br>
+            This week donations will go towards to: <a target="_blank" href="https://blindcatrescue.com/">Blind Cat Rescue & Sanctuary</a>.
+        </p
+    </article>
+
+    <br><br>
+    </article>
+    </body>
+
+    <div class="container">
+    <div class="row">
+        <form action="">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" class="form-control" id="name"
+                       placeholder="Full name" name="fullname">
+            </div>
+            <div class="form-group">
+                <label for="card">Card Number:</label>
+                <input type="text" class="form-control" id="card"
+                       placeholder="xxxxxxxxxxxxx" name="card">
+            </div>
+            <div class="form-group">
+                <label for="expiration">Expiration Date:</label>
+                <input type="text" class="form-control" id="expiration"
+                       placeholder="xx/xx" name="cardexpiration">
+            </div>
+            <div class="form-group">
+                <label for="security">Security Code:</label>
+                <input type="text" class="form-control" id="security"
+                       placeholder="xxx" name="cardsecurity">
+            </div>
+            <div class="form-group">
+                <label for="donation">Donation Amount:</label>
+                <input type="text" class="form-control" id="donation"
+                       placeholder="$1.00" name="money">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email"
+                       placeholder="Enter email" name="email">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <br><br>
+            <br><br>
+            <br><br>
+        </form>
+    </div>
+    </div>
+    <footer class="footer page-footer font-small ">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy; Art Hendela, 2020 |  Terms Of Use  |  Privacy Statement</span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- DEVELOPER: Marcelo Mendoza, IS117-002, Spring 2021 -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>My First Bootstrap 4 Page</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">CatCare</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="adult_cats.html">Adult Cats</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop1"
+                           data-toggle="dropdown">
+                            Outside Cats
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="stray_cats.html">Stray Cats</a>
+                            <a class="dropdown-item" href="tnr.html">TNR Program</a>
+                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop2"
+                           data-toggle="dropdown">
+                            Baby Cats
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="kitten_care.html">Kitten Care</a>
+                            <a class="dropdown-item" href="fostering.html">Fostering</a>
+                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop3"
+                           data-toggle="dropdown">
+                            Contacts
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="contact.html">Contact</a>
+                            <a class="dropdown-item" href="donations.html">Donations</a>
+                            <a class="dropdown-item" href="aboutus.html">About Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <header>
+        <div class="image-container">
+            <img src="images/cutecat.jpg" alt="cat with two paws together, looking at the sky">
+            <div class="text-block">
+                <h4>Welcome to Cat Care</h4>
+                <p><i>"The smallest feline is a masterpiece."</i> <br> - Leonardo da Vinci</p>
+            </div>
+            <div class="newsletter-box">
+                <h4>Sign up for our Weekly Newsletter</h4>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" class="form-control" id="email"
+                           placeholder="Enter email" name="email">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </header>
+
+    </div>
+        <div class="col-sm-4  text-center">
+            <br><br><br>
+            <h2>Articles</h2>
+            <h3>Updated Weekly!</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="images/adultcat.jpg" alt="Cat with stripes print in grass, pawing a leaf">
+                <h3><a href="adult_cats.html">Adult Cats</a></h3>
+                <p>Learn about what food and care to give to your adult feline to make sure they are healthy!</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="images/whitecat.jpg" alt="white Cat with brown ears by a corner wall looking at you">
+                <h3><a href="fostering.html">Fostering</a></h3>
+                <p>Learn about what is fostering all about and if you fit the requirements to do so!</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="images/catawaken.jpg" alt="Cat laying down stretching there paws outward">
+                <h3><a href="tnr.html">TNR Program</a></h3>
+                <p>Learn about TNR and see how you can help your community of felines!</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="images/catpounce.jpg" alt="white cat with light brown head ready to pounce">
+                <h3><a href="kitten_care.html">Kitten Care</a></h3>
+                <p>Learn about what you need to know about your small baby feline!</p>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <footer class="footer page-footer font-small ">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy; Marcelo Mendoza, 2021 |  Terms Of Use  |  Privacy Statement</span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>

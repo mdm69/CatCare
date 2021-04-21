@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- DEVELOPER: Marcelo Mendoza, IS117-002, Spring 2021 -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>My First Bootstrap 4 Page</title>
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">CatCare</a>
+      <!-- Responsive Button for the smaller menu -->
+      <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <!-- Links -->
+          <li class="nav-item">
+            <a class="nav-link" href="adult_cats.html">Adult Cats</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop1"
+               data-toggle="dropdown">
+              Outside Cats
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="stray_cats.html">Stray Cats</a>
+              <a class="dropdown-item" href="tnr.html">TNR Program</a>
+            </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop2"
+               data-toggle="dropdown">
+              Baby Cats
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="kitten_care.html">Kitten Care</a>
+              <a class="dropdown-item" href="fostering.html">Fostering</a>
+            </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop3"
+               data-toggle="dropdown">
+              Contacts
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="donations.html">Donations</a>
+              <a class="dropdown-item" href="aboutus.html">About Us</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <img src="images/thisstraycatsheader1.jpg" alt="four cats all together eating food outside"></img>
+    </header>
+
+    <body>
+    <article class="strays">
+      <h2>Stray Cats</h2>
+      <img src="images/img4.jpg" alt="a fluffy cat looking downards">
+      <p>
+        If any outdoor cat comes to you without a collar on and is not scared of you, its probably a stray cat. Cats that are strays are socialized cats that have been around
+        a human at some point in their life. But has been left or lost their home and wonder the streets. Stray cats do have a difficult part of adjusting to the outdoor, and we can help
+        them in a few ways. We can regularly feed them each day, this can just be dry food of any sort that you can budget. We can provide a type of home for them to feel safe in. We can
+        provide vaccinations and neuter. Stray cats are most likely to become indoor cats again if provided the needs and friendliness by us.
+      </p>
+    </article>
+
+    <article class="ferals">
+      <h2>Feral Cats</h2>
+      <img src="images/img5.jpg" alt="a cat over a hill looking towards you">
+      <p>
+        If any outdoor cat hisses or runs away from you, then this would be a feral cat. Feral cats are most likely born outdoors and rarely experience interaction with any
+        person around. They show aggression and dont back down from a territory they believe is theirs. They can be very difficult to socialize so its best to have them <a>TNR</a>
+        and to vaccinate them as soon as possible. We can provide the same foods, shelters and water that we would give a stray cat. We can also socialize them slowly to become an indoor cat.
+        They might not be as friendly towards strangers or to their owners but will show the love that they are thankful for giving them a chance.
+      </p>
+    </article>
+
+    <article class="house">
+      <h2>Housing</h2>
+      <img src="images/img7.jpg" alt="a bright cat on a rock looking away from the photo ">
+      <p>
+        Shelters for outdoor cats do range from purchasing or building one. The best way to create many shelters to your liking would be to build one. Building a cat house is not expensive
+        and can help them during the cold winters. You would only need two containers, one smaller then the other, and to cut a hole at the same spot for both. Insulation would be put in-between
+        the two containers and hay in the small container where they will live. Make sure to tape those sharp edges so that no cat gets hurt. This would be a simple house and they will
+        stay warm during cold times. Depending on the shelter size, more then one cat can live in a shelter. However, sometimes we dont have the time to build one but there are many
+        pre-built shelters that can be purchased and are very reliable. <br><br> Outdoor Cat Houses:
+      </p>
+      <ul>
+        <li><a target="_blank" href="https://www.amazon.com/ecoFLEX-Albany-Outdoor-Feral-House/dp/B01JCNF8X4/ref=sr_1_3?dchild=1&keywords=outdoor+stray+cat+shelter&qid=1618986289&sr=8-3">
+          ecoFlex Albany Outdoor Feral Cat House</a></li>
+        <li><a target="_blank" href="https://www.amazon.com/ROCKEVER-Outdoor-Shelter-Rainproof-Two-Three/dp/B07S8QHZXP/ref=bmx_2?pd_rd_w=gO2Dj&pf_rd_p=b56a886c-2bb4-4e74-b4cf-23d7a76693c8&pf_rd_r=6T8C3NNMH0H3CD6J73VE&pd_rd_r=b0fa62eb-0477-4794-a8aa-5229118481f4&pd_rd_wg=Ddb7o&pd_rd_i=B07S8QHZXP&psc=1">
+          Rockever Outdoor Cat Shelter with Escape Door</a></li>
+        <li><a target="_blank" href="https://www.amazon.com/Kitty-Tube-Outdoor-Insulated-House/dp/B0079RO530/ref=pd_di_sccai_1?pd_rd_w=2jqDx&pf_rd_p=c9443270-b914-4430-a90b-72e3e7e784e0&pf_rd_r=XD6873AE107GG4ENM89D&pd_rd_r=11d00f5b-c553-4c31-8516-88914882e62d&pd_rd_wg=wf7zk&pd_rd_i=B0079RO530&psc=1">
+          The Kitty Tube Feral Option with Straw</a></li>
+      </ul>
+      <br><br><br><br><br>
+    </article>
+    </body>
+  </div>
+
+  <footer class="footer page-footer font-small ">
+    <div class="container">
+      <div class="row">
+        <span class="text-muted">&copy; Marcelo Mendoza, 2021 |  Terms Of Use  |  Privacy Statement</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
